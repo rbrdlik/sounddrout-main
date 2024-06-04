@@ -1,0 +1,80 @@
+.swMain{
+    background-color: #202020;
+    width: 100%;
+    height: auto;
+    padding: 80px;
+}
+.swText h2{
+    font-size: 2.1rem;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+.swText p{
+    font-size: 1.1rem;
+    color: #9C9C9C;
+    margin-bottom: 1vh;
+}
+.swMainContent{
+    display: flex;
+    justify-content: center;
+}
+.swText{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.swImgContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swImg{
+    max-width: 80px;
+    width: auto;
+    width: 100%;
+}
+.swButtons{
+    display: flex;
+    gap: 15px;
+    padding: 35px;
+    justify-content: center;
+}
+.banner{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.button{
+    color: #fff;   
+    padding: 12px 45px 12px 45px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.button:active{
+    transform: scale(.95);
+}
+#c1{
+    background: linear-gradient(45deg, rgba(44,72,255,1) 0%, rgba(68,113,237,1) 100%);
+}
+#c1:hover{
+    background: linear-gradient(45deg, rgb(38, 61, 215) 0%, rgb(57, 96, 204) 100%);
+}
+#c12{
+    background: linear-gradient(45deg, rgb(31, 54, 203) 0%, rgb(18, 66, 199) 100%);
+}
+#c12:hover{
+    background: linear-gradient(45deg, rgb(24, 43, 164) 0%, rgb(13, 53, 163) 100%);
+}
+#c2{
+    background: linear-gradient(45deg, rgba(255,44,44,1) 0%, rgba(237,68,68,1) 100%);
+    transition: .2s ease;
+}
+#c2:hover{
+    background: linear-gradient(45deg, rgb(223, 38, 38) 0%, rgb(203, 58, 58) 100%);
+    transition: .2s ease;
+}
+

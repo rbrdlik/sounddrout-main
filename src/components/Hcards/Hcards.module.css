@@ -1,0 +1,20 @@
+.card{
+    width: 33.33%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.img{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.heroContent{
+    display: flex;
+    height: 60vh;
+}

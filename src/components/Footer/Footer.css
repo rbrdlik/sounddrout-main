@@ -1,0 +1,97 @@
+.footer{
+    display: flex;
+    background: #252525;
+    color: #fff;
+    padding: 30px;
+}
+.footer h2, .footer h3{
+    padding-bottom: 10px;
+}
+.footer h3{
+    font-size: 1.1rem;
+}
+.footer-section-bg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    padding: 15px 0px 15px 90px;
+    border-right: 1px solid #464646;
+    border-left: 1px solid #464646;
+}
+.footer-section-sm1{
+    width:33%;
+    padding: 15px 50px 15px 50px;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+.footer-section-sm{
+    width: 20%;
+    height: 100%;
+    padding: 15px 50px 15px 50px;
+    align-items: center;
+    position: relative;
+}
+.footer-section-center{
+    width: 40%;
+    align-items: center;
+    position: relative;
+}
+.footer-btn{
+    border: 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .2s ease;
+    background-color: #b1b1b1;
+}
+.footer-btns{
+    gap: 10px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.footer-links{
+    margin-left: 10px;
+    display: grid;
+    gap: 5px;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.footer-links li{
+    list-style: none;
+    color: #979797;
+    cursor: pointer;
+    transition: .2s ease;
+    text-decoration: none;
+}
+.footer-links li:hover{
+    color: #cecece;
+    transition: .2s ease;
+}
+.logo{
+    width: 130px;
+    margin-right: 10px;
+}
+.footer-left-content{
+    display: flex;
+    align-items: center;
+}
+.footer-left-content-text{
+    display: inline-block;
+}
+.footer-left-content-text p{
+    color: #979797;
+}
+.footer-btn:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+    background-color: #cecece;
+}
+.footer-btn:active{
+    transform: scale(1);
+}

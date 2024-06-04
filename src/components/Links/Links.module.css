@@ -1,0 +1,20 @@
+.link{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 15vh;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: .2s ease;
+}
+.link:hover{
+    bottom: 17vh;
+    transition: .2s ease;
+}
+.text{
+    color: #fff;
+}
+.iconStyle{
+    width: 90px;
+}
