@@ -8,6 +8,8 @@
 }
 body{
   background: #202020;
+  overflow-x: hidden;
+  animation: loadTransition .5s;
 }
 ::selection{
   background-color: #f784378e;
@@ -29,4 +31,14 @@ img::selection {
 }
 :root{
   --white: #fff;
+}
+@keyframes loadTransition{
+  from{
+      opacity: 0;
+      transform: translateY(0);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

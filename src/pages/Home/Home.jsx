@@ -9,7 +9,7 @@ import styles from "./Home.module.css"
 export default function Home(){
     return(
         <>
-            <Hero>
+            <Hero height="70vh">
                 <Hcards />
             </Hero>
             <div className={styles.swMain}>
