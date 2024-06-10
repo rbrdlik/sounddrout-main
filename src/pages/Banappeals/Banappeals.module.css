@@ -10,3 +10,92 @@
     font-size: 5rem;
     color: #fff;
 }
+.banContent{
+    margin: 30px;
+    margin-bottom: 50px;
+}
+.banbox{
+    background-color: #272727;
+    padding: 25px;
+    border-radius: 18px;
+    margin: 0 15%;
+    line-height: 1.4;
+}
+.banbox h1{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.banbox h2{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#mainText{
+    text-align: center;
+}
+.banbox p{
+    color: #a0a0a0;
+    margin: 0 2%;
+    margin-bottom: 10px;
+}
+.banbox button{
+    background-color: #fd2f2f;
+    border: 0;
+    padding: 10px 100px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: .2s ease;
+}
+.banbox button:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+}
+.banbox button:active{
+    transform: scale(1);
+}
+.mainBtn{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .banbox{
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .banbox{
+        margin: 0 5%;
+    }
+}
+@media screen and (max-width: 426px) {
+    .banbox{
+        margin: 0 0;
+    }
+}
+@media screen and (max-width: 740px) {
+    .heroText h1{
+        font-size: 3.5rem;
+    }
+    .heroText{
+        padding-top: 10vh;
+    }
+}
+@media screen and (max-width: 426px) {
+    .heroText h1{
+        font-size: 2.5rem;
+    }
+    .heroText{
+        padding-top: 11vh;
+    }
+}

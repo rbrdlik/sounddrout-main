@@ -11,8 +11,9 @@
 .rulesContent{
     background-color: #272727;
     padding: 25px;
+    border-radius: 18px;
     color: #a0a0a0;
-    margin: 0 10%;
+    margin: 0 15%;
     font-size: 1.1rem;
     line-height: 1.4;
 }
@@ -23,4 +24,22 @@
     text-decoration: none;
     color: #4949d3;
     font-weight: bold;
+}
+.rulesContent p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 1025px) {
+    .rulesContent{
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .rulesContent{
+        margin: 0 5%;
+    }
+}
+@media screen and (max-width: 426px) {
+    .rulesContent{
+        margin: 0 0;
+    }
 }

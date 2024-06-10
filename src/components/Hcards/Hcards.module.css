@@ -6,9 +6,7 @@
     position: relative;
 }
 .img{
-    max-width: 550px;
-    width: 100%;
-    height: auto;
+    width: 550px;
     position: absolute; 
     left: 50%;
     bottom: 0;
@@ -17,4 +15,32 @@
 .heroContent{
     display: flex;
     height: 60vh;
+}
+@media screen and (max-width: 1024px) {
+    .img{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 769px) {
+    #hideNa{
+        display: none;
+    }
+    .card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 535px) {
+    .img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .img{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .img{
+        width: 300px;
+    }
 }

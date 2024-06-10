@@ -8,7 +8,9 @@ export default function Footer(){
             <footer className="footer">
                 <div className="footer-section-sm1">
                     <div className="footer-left-content">
-                        <img src={logo} alt="" className="logo"/>
+                        <div className="imgBox">
+                            <img src={logo} alt="" className="logo"/>
+                        </div>
                         <div className="footer-left-content-text">
                             <h3>SoundDrout</h3>
                             <p>© 2024 all rights reserved</p>

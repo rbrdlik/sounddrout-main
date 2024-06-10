@@ -91,3 +91,54 @@ nav ul li:hover{
 .dropdownMenuBox p:hover{
     background-color: #404040;
 }
+#bars{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+#logoNav{
+    width: 80px;
+    height: 80px;
+}
+.barsNa{
+    display: none;
+}
+.imgNa{
+    display: none;
+}
+.navResponsive{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    max-width: 250px;
+    right: 100%;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+    z-index: 10;
+}
+@media screen and (max-width: 740px) {
+    .navb{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.767); 
+    }
+    .barsNa{
+        justify-content: right;
+        display: grid;
+        width: 50%;
+        padding: 10px 20px;
+    }
+    .imgNa{
+        justify-content: left;
+        display: grid;
+        width: 50%;
+        padding: 10px 20px;
+    }
+}

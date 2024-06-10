@@ -1,5 +1,6 @@
 import "./Navbar.css"
 import { Link } from "react-router-dom";
+import logo from "../../img/logo.png"
 
 export default function Navbar(){
     let drop1Active = true
@@ -44,6 +45,9 @@ export default function Navbar(){
     return(
         <>
             <nav>
+                <div className="imgNa">
+                    <img src={logo} alt="" id="logoNav"/>
+                </div>
                 <div className="navb">
                     <ul>
                         <Link to={"/"}><li>Home</li></Link>
@@ -67,6 +71,9 @@ export default function Navbar(){
                         </div>
                         <Link to={"https://support.sounddrout.com"}><li>Contact us</li></Link>
                     </ul>
+                </div>
+                <div className="barsNa">
+                    <i class="fa-solid fa-bars" id="bars"></i>
                 </div>
             </nav>
         </>

@@ -2,6 +2,7 @@ import Hero from "../../components/Hero/Hero";
 import styles from "./Rules.module.css"
 import Footer from "../../components/Footer/Footer";
 import RulesBox from "../../components/RulesBox/RulesBox";
+import { Link } from "react-router-dom";
 
 export default function Rules(){
     const coloredChannel = {
@@ -24,7 +25,7 @@ export default function Rules(){
                 <p><b>IV</b> - For moderation purposes, this server is English only. This means you cannot use ASCII, binary, morse code, ciphered code, or made-up languages from games/movies.</p>
                 <p><b>V</b>- Plagiarism of any part of Sound's World including the rules, icons or banners is not allowed and will result in a ban. In addition, please avoid distributing copyrighted content in the server such as full movies or games.</p>
                 <p><b>VI</b> - We may record voice channels or streams in the server to be used privately as evidence in the event something occurs that is against the rules, and by using our VCs you give consent to this occurring.</p>
-                <p><b>We must also uphold Discord's <a href="">Terms of Service</a>, <a href="">Community Guidelines</a> and <a href="">Partner Code of Conduct.</a></b></p>
+                <p><b>We must also uphold Discord's <a href="https://discord.com/new/terms">Terms of Service</a>, <a href="https://discord.com/new/guidelines">Community Guidelines</a> and <a href="https://support.discord.com/hc/en-us/articles/360024871991-Discord-Partnership-Code-of-Conduct">Partner Code of Conduct.</a></b></p>
             </RulesBox>
             <RulesBox title="Rules">
                 <p>1. Swearing is allowed, but you are not allowed to swear excessively or use an unnecessary amount of swearing against others in a harmful way.<br/>- You are also not allowed to use slurs or bypass our filter against them. "Bypassing" means changing the characters of a filtered word so our automod bots cannot detect what you have said. For example, incomplete slurs like n***** or f****t are not allowed<br/>- Directing attention to slurs in other locations (e.g file names or stickers) is also not allowed</p>
@@ -45,6 +46,11 @@ export default function Rules(){
                 <p>16. You aren't allowed to minimod. This means acting as a mod in any way, for example by telling people they broke a rule or saying they will be punished. If you have a problem please ping an active staff member instead of acting as one yourself.</p>
                 <p>17. No interfering in moderator's duties, this could mean:<br/>- Messing with them or trolling on purpose (e.g., asking for punishments, or pinging without a good reason)<br/>- Maliciously reporting people by providing fake/forged evidence<br/>- Misusing or exploiting any of the bots in the server<br/>- Misinforming users with serious questions, or being disruptive in chat by constantly answering questions while staff are already doing so<br/>- Arguing with staff members in chat while they moderate instead of messaging a higher ranked staff member<br/>- Not responding to staff or dodging their questions regarding you breaking the rules<br/>- Assisting others in avoiding punishments after they have broken the rules</p>
             </RulesBox>
+            <div className={styles.bottomText}>
+                <p>If you have any questions about the rules or would like to report someone, please DM any staff member about it.</p>
+                <h1>Ready to join?</h1>
+                <Link to={"https://discord.com/invite/sound"}><button>Join server</button></Link>
+            </div>
             <Footer />
         </>
     );
