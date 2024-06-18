@@ -6,6 +6,50 @@ export default function Navbar(){
     let drop1Active = true
     let drop2Active = true
 
+    let navOpen = false
+    const navButton = () => {
+        const nav = document.getElementById("respNav")
+        if(!navOpen){
+            navOpen = true
+            nav.style.right = "0"
+        } else{
+            navOpen = false
+            nav.style.right = "-100%"
+        }
+    }
+
+    let dropRespo1 = true
+    let dro2Respo2 = true
+    const dropResp1 = () => {
+        const drop1Resp = document.getElementById("navRespDrop")
+        const drop2Resp = document.getElementById("navRespDrop2")
+
+        if(dropRespo1){
+            dropRespo1 = false
+            dro2Respo2 = true
+            drop1Resp.style.display = "block"
+            drop2Resp.style.display = "none"
+        } else{
+            dropRespo1 = true
+            drop1Resp.style.display = "none"
+        }
+    }
+
+    const dropResp2 = () => {
+        const drop1Resp = document.getElementById("navRespDrop")
+        const drop2Resp = document.getElementById("navRespDrop2")
+
+        if(dro2Respo2){
+            dro2Respo2 = false
+            dropRespo1 = true
+            drop2Resp.style.display = "block"
+            drop1Resp.style.display = "none"
+        } else{
+            dro2Respo2 = true
+            drop2Resp.style.display = "none"
+        }
+    }
+
     const dropDown1 = () => {
         const dropdown1 = document.getElementById("one")
         const dropdown2 = document.getElementById("second")
@@ -73,9 +117,31 @@ export default function Navbar(){
                     </ul>
                 </div>
                 <div className="barsNa">
-                    <i class="fa-solid fa-bars" id="bars"></i>
+                    <i class="fa-solid fa-bars" id="bars" onClick={navButton}></i>
                 </div>
             </nav>
+            <div className="navResp" id="respNav">
+                <div className="navClose">
+                    <i class="fa-solid fa-xmark" onClick={navButton}></i>
+                </div>
+                <ul>
+                    <Link to={"/"}><li>Home</li></Link>
+                    <li onClick={dropResp1}>Discord servery <i className="fa-solid fa-caret-down"></i></li>
+                    <ul id="navRespDrop" className="navRespDropN1">
+                        <Link to={"/rules"}><li>Rules</li></Link>
+                        <Link to={"/faq"}><li>FAQ</li></Link>
+                        <Link to={"/ban-appeals"}><li>Ban Appeals</li></Link>
+                    </ul>
+                    <li onClick={dropResp2}>YouTube <i className="fa-solid fa-caret-down"></i></li>
+                    <ul id="navRespDrop2" className="navRespDropN2">
+                        <Link to={"https://www.youtube.com/channel/UCh6ZuSSFebAtWJTldsLxTtQ?app=desktop"}><li>Main channel</li></Link>
+                        <Link to={"https://www.youtube.com/channel/UCCt5PNMXp5Hw3g41c36alIA?app=desktop"}><li>Second channel</li></Link>
+                    </ul>
+                    <Link to={"https://support.sounddrout.com"}><li>Contact us</li></Link>
+                    <hr />
+                    <button className="btn2"><i className="fa-solid fa-basket-shopping"></i> Store</button>
+                </ul>
+            </div>
         </>
     );
 }
